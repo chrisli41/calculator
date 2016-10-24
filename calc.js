@@ -20,9 +20,9 @@ $(document).ready(function(){
         return input.length > 13 ? input.slice(-13) : input;
     }
 
-    $('button').click(function(){
+    $('.button').click(function(){
         
-        entry = $(this).val();
+        entry = $(this).data('value');
 
         if(symbols.indexOf(entry) === -1){
             current += entry;
@@ -58,7 +58,7 @@ $(document).ready(function(){
             }
         }
 
-        else if(entry === '=' && current[current.length - 1] !== '.'){
+        else if(entry === '=' && current[current.length - 1] !== '.' && operations.indexOf(ans[ans.length - 1]) === -1){
 
             history = replace(ans.toString());
             ans = eval(ans);

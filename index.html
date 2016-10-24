@@ -3,40 +3,45 @@
 <head>
     <meta charset="UTF-8">
 
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Quattrocento|Raleway" rel="stylesheet">
     <link href="calc.css" rel="stylesheet" type="text/css"/>
 
     <title>Calculator App</title>
 </head>
 <body>
 
+    <h1>Calculator <span>App</span></h1>
     <div id="main">
+
         <div id="display">
             <div id="output"></div>
             <div id="output-history"></div>
         </div>
 
-        <button value="ce">CE</button>
-        <button value="ac">AC</button>
+        <div class='button reset' data-value="ce">CE</div>
+        <div class='button reset' data-value="ac">AC</div>
 
-        <button value="7">7</button>
-        <button value="8">8</button>
-        <button value="9">9</button>
-        <button value="+">+</button>
+        <div class="clearfix"></div>
 
-        <button value="4">4</button>
-        <button value="5">5</button>
-        <button value="6">6</button>
-        <button value="-">-</button>
+        <div class='button' data-value="7">7</div>
+        <div class='button' data-value="8">8</div>
+        <div class='button' data-value="9">9</div>
+        <div class='button symbol' data-value="+">+</div>
 
-        <button value="1">1</button>
-        <button value="2">2</button>
-        <button value="3">3</button>
-        <button value="/">÷</button>
+        <div class='button' data-value="4">4</div>
+        <div class='button' data-value="5">5</div>
+        <div class='button' data-value="6">6</div>
+        <div class='button symbol' data-value="-">-</div>
 
-        <button value="0">0</button>
-        <button value=".">.</button>
-        <button value="=">=</button>
-        <button value="*">x</button>
+        <div class='button' data-value="1">1</div>
+        <div class='button' data-value="2">2</div>
+        <div class='button' data-value="3">3</div>
+        <div class='button symbol' data-value="/">÷</div>
+
+        <div class='button' data-value="0">0</div>
+        <div class='button decimal' data-value=".">.</div>
+        <div class='button equal' data-value="=">=</div>
+        <div class='button symbol' data-value="*">x</div>
     </div>
 
 </body>
