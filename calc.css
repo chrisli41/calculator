@@ -64,6 +64,7 @@ h1 span {
 
 #output {
     color: #fff;
+    height: 45px;
     font-size: 32px;
     padding: 10px 20px 5px 10px;
     text-align: right;
